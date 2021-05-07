@@ -12,13 +12,13 @@ public class Main {
         UserManager userManager = new UserManager();
         CommentManager commentManager = new CommentManager();
         
-        User educator = userManager.addUsers(1, "Engin", "DEMIROÐ");
+        User educator = userManager.addUsers(1, "Engin", "DEMIROï¿½");
         User student = userManager.addUsers(2, "Murat", "DURSUN");
 
         Course course1 = courseManager.addCourse(1
-                , "Yazýlým Geliþtirici Yetiþtirme Kampý (JAVA + REACT)", educator, 36);
+                , "YazÄ±lÄ±m GeliÅŸtirici YetiÅŸtirme KampÄ± (JAVA + REACT)", educator, 36);
         Course course2 = courseManager.addCourse(2
-                , "Yazýlým Geliþtirici Yetiþtirme Kampý (C# + ANGULAR)", educator, 5);
+                , "Yazï¿½lï¿½m Geliï¿½tirici YetiÅŸtirme KampÄ± (C# + ANGULAR)", educator, 5);
 
         Comment  comment1 = commentManager.addComment(1, student.getId(), course1.getId(), 3, "Tebrikler.");
         Comment  comment2 = commentManager.addComment(1, student.getId(), course2.getId(), 4, "github.com/0x1dot");
